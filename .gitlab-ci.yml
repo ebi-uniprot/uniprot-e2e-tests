@@ -6,5 +6,5 @@ tests:
   image: mcr.microsoft.com/playwright:v1.39.0-jammy
   parallel: 7
   script:
-    - npm ci
-    - npx playwright test --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
+    - yarn install
+    - yarn playwright test --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
