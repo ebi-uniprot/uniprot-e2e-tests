@@ -30,7 +30,7 @@ const searchableNamespaceLabels: Record<Namespace, string> = {
   [Namespace.citations]: "Literature citations",
   [Namespace.diseases]: "Human diseases",
   [Namespace.database]: "Cross-referenced databases",
-  [Namespace.locations]: "Subcellular locations",
+  [Namespace.locations]: "Subcellular location32434s",
   // Annotations
   [Namespace.unirule]: "UniRule",
   [Namespace.arba]: "ARBA",
