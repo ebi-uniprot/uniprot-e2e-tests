@@ -1,5 +1,5 @@
 {
-  "name": "uniprot-e2e",
+  "name": "uniprot-e2e-tests",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Daniel Rice <dlrice@ebi.ac.uk>",
