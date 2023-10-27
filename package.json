@@ -1,0 +1,12 @@
+{
+  "name": "uniprot-e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Rice <dlrice@ebi.ac.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.9"
+  },
+  "scripts": {}
+}
