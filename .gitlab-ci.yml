@@ -7,4 +7,4 @@ tests:
   parallel: 7
   script:
     - yarn install
-    - yarn playwright test --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
+    - PROD=${PROD:-0} yarn playwright test --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
