@@ -1,5 +1,5 @@
 ```
-# Run tests in all browsers
+# Run tests in all browsers against https://wwwdev.ebi.ac.uk/uniprot/front-end/dev/
 yarn playwright test
 
 # Run tests against www.uniprot.org
