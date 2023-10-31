@@ -4,7 +4,7 @@ stages:
 tests:
   stage: test
   image: mcr.microsoft.com/playwright:v1.39.0-jammy
-  parallel: 7
+  parallel: 6
   script:
     - yarn install
     - PROD=${PROD:-0} yarn playwright test --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
