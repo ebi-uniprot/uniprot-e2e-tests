@@ -8,11 +8,11 @@ tests:
   script:
     - yarn install
     - |
-    if [ "$PROD" == "1" ]; then
-      echo "Testing against www.uniprot.org"
-    else
-      echo "Testing against wwwdev.ebi.ac.uk/uniprot/front-end/dev/"
-    fi
+      if [ "$PROD" == "1" ]; then
+        echo "Testing against www.uniprot.org"
+      else
+        echo "Testing against wwwdev.ebi.ac.uk/uniprot/front-end/dev/"
+      fi
     - PROD=${PROD:-0} yarn playwright test --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
   artifacts:
     when: always
