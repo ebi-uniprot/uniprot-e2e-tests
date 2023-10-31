@@ -38,7 +38,18 @@ const searchableNamespaceLabels: Record<Namespace, string> = {
 
 for (const [namespace, string] of Object.entries(Namespace)) {
   test(`${namespace} * search`, async ({ page }) => {
-    await page.goto(`https://www.uniprot.org/${string}?query=*`);
+    // * search for that namespace
+    await page.goto(`./${string}?query=*`);
+
+    // Select table view
+    await page
+      .locator("span")
+      .filter({ hasText: "CardsTable" })
+      .getByLabel("Table")
+      .check();
+    await page.getByRole("button", { name: "View results" }).click();
+
+    // Assert some number of results are found
     await expect(
       page.getByText(
         new RegExp(
